@@ -14,8 +14,9 @@ A library that makes it easy to retrieve skins and faces of minecraft players ba
      const playerFace = pixelheads.getFaceAsBase64("uuid"); 
    ```
 3. Use one of the return values, e.g. in an `img`-tag:
-   ```
-   <img src="'data:image/png;base64,' + playerFace" alt="face of player"></img>
+   ```html
+   <img src="'data:image/png;base64,' + playerFace" 
+      alt="face of player"/>
    ```
 
 ## Building
