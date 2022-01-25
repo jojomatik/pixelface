@@ -1,4 +1,6 @@
 # pixelheads
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/jojomatik/pixelheads?sort=semver)](https://github.com/jojomatik/pixel/releases) [![GitHub](https://img.shields.io/github/license/jojomatik/pixelheads)](LICENSE) [![Build and publish npm package](https://github.com/jojomatik/pixelheads/actions/workflows/publish.yml/badge.svg)](https://github.com/jojomatik/pixelheads/actions/workflows/publish.yml) [![npm](https://img.shields.io/npm/v/pixelheads)](https://www.npmjs.com/package/pixelheads) [![npm](https://img.shields.io/npm/dw/pixelheads)](https://www.npmjs.com/package/pixelheads)
+
 A library that makes it easy to retrieve skins and faces of minecraft players based on their uuid.
 
 ## Usage
