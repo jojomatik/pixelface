@@ -1,0 +1,17 @@
+name: Release current beta version as full release version
+on: workflow_dispatch
+
+jobs:
+  sync_beta_to_main:
+    name: Push `beta` to `main`
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: beta
+          fetch-depth: 0
+          token: ${{ secrets.GH_TOKEN }}
+      # Warning: `beta` MUST include all commits from `main` otherwise the push will fail. This behaviour is not a bug and implemented by design.
+      - name: Push beta to main
+        run: git push origin beta:main
