@@ -6,12 +6,11 @@ jobs:
     name: Push `beta` to `main`
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          ref: beta
-          fetch-depth: 0
-          token: ${{ secrets.GH_TOKEN }}
       # Warning: `beta` MUST include all commits from `main` otherwise the push will fail. This behaviour is not a bug and implemented by design.
-      - name: Push beta to main
-        run: git push origin beta:main
+      - name: Push `beta` to `main`
+        uses: jojomatik/sync-branch@v1
+        with:
+          source: "beta"
+          target: "main"
+          strategy: "fail"
+          github_token: ${{ secrets.GH_TOKEN }}
