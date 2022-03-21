@@ -8,6 +8,7 @@ updates:
     open-pull-requests-limit: 50
     allow:
       - dependency-type: "production"
+    versioning-strategy: increase
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
@@ -16,3 +17,4 @@ updates:
     open-pull-requests-limit: 50
     allow:
       - dependency-type: "development"
+    versioning-strategy: increase
