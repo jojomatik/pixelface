@@ -80,6 +80,10 @@ jobs:
       - name: Install dependencies
         if: steps.cache.outputs.cache-hit != 'true'
         run: npm ci --prefer-offline --no-audit
+      - name: Test
+        run: npm run test
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
       - name: Build
         run: tsc
       - name: Release
