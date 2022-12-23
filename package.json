@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@types/sharp": "^0.30.2",
-    "@typescript-eslint/eslint-plugin": "^5.42.0",
+    "@typescript-eslint/eslint-plugin": "^5.47.0",
     "@typescript-eslint/parser": "^5.47.0",
     "eslint": "^8.30.0",
     "eslint-plugin-prettier": "^4.2.1",
